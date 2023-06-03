@@ -20,35 +20,37 @@
             app:layout_constraintStart_toStartOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ADD TASK"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            tools:layout_editor_absoluteY="625dp"
-            tools:ignore="MissingConstraints"
-            />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ALL TASK"
-            app:layout_constraintBottom_toBottomOf="@+id/button"
-            app:layout_constraintEnd_toEndOf="@+id/imageView" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:id="@+id/imageView"
             android:layout_margin="60dp"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            android:contentDescription="@string/icon"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo_banner" />
+
+        <Button
+            android:id="@+id/btn_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD TASK"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="625dp" />
+
+        <Button
+            android:id="@+id/btn_all_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALL TASK"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_add_task"
+            app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
