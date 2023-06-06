@@ -37,19 +37,12 @@ public class MainActivity extends AppCompatActivity {
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnAddTask = findViewById(R.id.btn_add_task);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnAllTask = findViewById(R.id.btn_all_task);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button btnSubmitTask = findViewById(R.id.btn_submit_task);
 
-        btnSubmitTask.setOnClickListener(view -> {
-            Log.i(TAG, "submit button clicked");
-            navigateAddTaskDetails();
-            Toast.makeText(this, "submitted!", Toast.LENGTH_SHORT).show();
 
-        });
 
         btnAddTask.setOnClickListener(view -> {
             Log.i(TAG, "submit button clicked add task");
             navigateAddTaskDetails();
-            Toast.makeText(this, "Copyright 2022", Toast.LENGTH_SHORT).show();
 
         });
         btnAllTask.setOnClickListener(view -> {

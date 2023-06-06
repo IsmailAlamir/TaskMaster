@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="330dp"
+            android:layout_height="330dp"
             android:layout_margin="60dp"
             android:contentDescription="@string/icon"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -39,9 +39,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ADD TASK"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="625dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/btn_all_task"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:text="ALL TASK"
             app:layout_constraintBottom_toBottomOf="@+id/btn_add_task"
-            app:layout_constraintEnd_toEndOf="@+id/imageView" />
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/btn_add_task" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

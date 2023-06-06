@@ -65,9 +65,9 @@
         android:layout_height="wrap_content"
         android:text="Total Task: 0"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_submit_task"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toTopOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/btn_submit_task"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
